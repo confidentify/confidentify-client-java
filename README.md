@@ -8,7 +8,7 @@ This project provides a Java client for the [Conf·ident·ify](https://confidentif
 
 First, add the project as a Maven dependency in your project:
 
-```
+```xml
 <dependency>
   <groupId>com.confidentify</groupId>
   <artifactId>confidentify-client-java</artifactId>
