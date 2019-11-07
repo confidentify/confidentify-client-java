@@ -66,7 +66,7 @@ public class ApiClientTest {
         final String value = System.getProperty(key);
         if (value == null || value.isEmpty()) {
             final String envKey = key.toUpperCase().replace('.', '_');
-            System.getenv(envKey);
+            return System.getenv(envKey);
         }
         return value;
     }
