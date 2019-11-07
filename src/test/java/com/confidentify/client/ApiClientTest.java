@@ -17,8 +17,8 @@ import com.confidentify.client.model.ProcessorVerdict;
 
 public class ApiClientTest {
 
-    private static final String USERNAME = System.getProperty("confidentify.username");
-    private static final String PASSWORD = System.getProperty("confidentify.password");
+    private static final String USERNAME = getProperty("confidentify.username");
+    private static final String PASSWORD = getProperty("confidentify.password");
 
     @Test
     public void testVanillaScenario() throws ApiException {
@@ -60,5 +60,14 @@ public class ApiClientTest {
             System.out.println("Outcome warn:     " + emailResponseRecord.getOutcome().getWarn());
         }
 
+    }
+
+    private static String getProperty(String key) {
+        final String value = System.getProperty(key);
+        if (value == null || value.isEmpty()) {
+            final String envKey = key.toUpperCase().replace('.', '_');
+            System.getenv(envKey);
+        }
+        return value;
     }
 }
