@@ -2,6 +2,8 @@
 
 This project provides a Java client for the Confidentify APIs. 
 
+[![Build Status: Linux](https://travis-ci.org/confidentify/confidentify-client-java.svg?branch=master)](https://travis-ci.org/confidentify/confidentify-client-java)
+
 ## How to use
 
 The client provides the key class `ApiClient` as well as a set of classes specific to each tagged part of the API, for instance `ProcessApi`.
