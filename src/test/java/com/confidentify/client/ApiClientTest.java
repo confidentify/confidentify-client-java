@@ -1,8 +1,8 @@
 package com.confidentify.client;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
-import org.junit.Assume;
 import org.junit.Test;
 
 import com.confidentify.client.api.AuthApi;
@@ -22,8 +22,8 @@ public class ApiClientTest {
 
     @Test
     public void testVanillaScenario() throws ApiException {
-        Assume.assumeNotNull(USERNAME);
-        Assume.assumeNotNull(PASSWORD);
+        assertNotNull("Username is not set. Use the 'confidentify.username' system property or 'CONFIDENTIFY_USERNAME' environment variable.", USERNAME);
+        assertNotNull("Password is not set. Use the 'confidentify.password' system property or 'CONFIDENTIFY_PASSWORD' environment variable.", PASSWORD);
 
         final ApiClient apiClient = new ApiClient();
 
