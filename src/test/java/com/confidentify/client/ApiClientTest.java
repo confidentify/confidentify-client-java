@@ -13,6 +13,11 @@ import com.confidentify.client.model.EmailRequest;
 import com.confidentify.client.model.EmailRequestRecord;
 import com.confidentify.client.model.EmailResponse;
 import com.confidentify.client.model.EmailResponseRecord;
+import com.confidentify.client.model.IdentifyRequest;
+import com.confidentify.client.model.IdentifyRequestRecord;
+import com.confidentify.client.model.IdentifyResponse;
+import com.confidentify.client.model.IdentifyResponseRecord;
+import com.confidentify.client.model.IdentifyResponseRecordEntity;
 import com.confidentify.client.model.ProcessorVerdict;
 
 public class ApiClientTest {
@@ -34,7 +39,7 @@ public class ApiClientTest {
         apiClient.setAccessToken(accessToken);
 
         final ProcessApi processApi = new ProcessApi(apiClient);
-
+        
         // Email processing
         final String[] emailInputs = { "info[AT]gmali.com", "conf.identify+4897392@confidentify.com" };
 
@@ -60,6 +65,13 @@ public class ApiClientTest {
             System.out.println("Outcome warn:     " + emailResponseRecord.getOutcome().getWarn());
         }
 
+        // Identify processing
+        final IdentifyRequestRecord identifyRequestRecord = new IdentifyRequestRecord().id("fdlkjs321l").text("Dr Kim Johannesson - Medical Doctor at Hamlet Hospital Inc.");
+        final IdentifyResponse identifyResponse = processApi.identifyPost(new IdentifyRequest().addRecordsItem(identifyRequestRecord));
+        final IdentifyResponseRecord identifyResponseRecord = identifyResponse.getRecords().get(0);
+        for (IdentifyResponseRecordEntity entity : identifyResponseRecord.getEntities()) {
+            System.out.println(entity.getEntityType() + " entity found: " + entity.getText());
+        }
     }
 
     private static String getProperty(String key) {
