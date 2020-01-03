@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.confidentify</groupId>
 	<artifactId>confidentify-client-java</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>Confidentify client for Java</name>
 	<description>This project provides a Java client for the Conf·ident·ify APIs.</description>
 	<url>https://confidentify.com</url>
@@ -28,7 +28,7 @@
 		<url>https://github.com/confidentify/confidentify-client-java</url>
 		<connection>scm:git:git@github.com:confidentify/confidentify-client-java.git</connection>
 		<developerConnection>scm:git:git@github.com:confidentify/confidentify-client-java.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>confidentify-client-java-1.0.0</tag>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
