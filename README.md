@@ -1,6 +1,6 @@
-# Conf·ident·ify client for Java
+# Confï¿½identï¿½ify client for Java
 
-This project provides a Java client for the [Conf·ident·ify](https://confidentify.com) APIs. 
+This project provides a Java client for the [Confï¿½identï¿½ify](https://confidentify.com) APIs. 
 
 [![Build Status: Linux](https://travis-ci.org/confidentify/confidentify-client-java.svg?branch=master)](https://travis-ci.org/confidentify/confidentify-client-java)
 
@@ -12,7 +12,7 @@ First, add the project as a Maven dependency in your project:
 <dependency>
   <groupId>com.confidentify</groupId>
   <artifactId>confidentify-client-java</artifactId>
-  <version>0.1</version>
+  <version>1.0.0</version>
 <dependency>
 ``` 
 
