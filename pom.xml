@@ -3,6 +3,9 @@
 	<groupId>com.confidentify</groupId>
 	<artifactId>confidentify-client-java</artifactId>
 	<version>1.1-SNAPSHOT</version>
+    <name>Confidentify client for Java</name>
+    <description>This project provides a Java client for the Conf·ident·ify APIs.</description>
+    <url>https://confidentify.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,6 +19,11 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	<developers>
+		<developer>
+			<name>Kasper Sørensen</name>
+		</developer>
+    </developers>
 	<scm>
 		<url>https://github.com/confidentify/confidentify-client-java</url>
 		<connection>scm:git:git@github.com:confidentify/confidentify-client-java.git</connection>
