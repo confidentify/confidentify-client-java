@@ -1,6 +1,6 @@
-# Conf�ident�ify client for Java
+# Conf·ident·ify client for Java
 
-This project provides a Java client for the [Conf�ident�ify](https://confidentify.com) APIs. 
+This project provides a Java client for the [Conf·ident·ify](https://confidentify.com) APIs. 
 
 [![Build Status: Linux](https://travis-ci.org/confidentify/confidentify-client-java.svg?branch=master)](https://travis-ci.org/confidentify/confidentify-client-java)
 
