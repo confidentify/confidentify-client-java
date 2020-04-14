@@ -12,7 +12,7 @@ First, add the project as a Maven dependency in your project:
 <dependency>
   <groupId>com.confidentify</groupId>
   <artifactId>confidentify-client-java</artifactId>
-  <version>1.0.0</version>
+  <version>1.2.0</version>
 <dependency>
 ``` 
 
